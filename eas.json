@@ -6,13 +6,22 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      // ⬅️ ADD THIS BLOCK 
+      "env": {
+        "GOOGLE_SERVICES_JSON": "@google-services-json"
+      }
+      // ⬅️ END OF BLOCK
     },
     "preview": {
       "distribution": "internal"
     },
     "production": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      // You should also add it here for future production builds
+      "env": {
+        "GOOGLE_SERVICES_JSON": "@google-services-json"
+      }
     }
   },
   "submit": {
