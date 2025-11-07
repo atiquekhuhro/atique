@@ -21,6 +21,10 @@ expo-env.d.ts
 # Metro
 .metro-health-check*
 
+
+# Firebase/Google Services Secret files
+google-services.json
+
 # debug
 npm-debug.*
 yarn-debug.*
